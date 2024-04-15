@@ -9,6 +9,18 @@ readme = "README.md"
 python = "^3.12"
 
 
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.0"
+mypy = "^1.9.0"
+ruff = "^0.3.7"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
